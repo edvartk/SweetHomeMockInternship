@@ -158,7 +158,9 @@ public class Home implements Serializable, Cloneable {
         HomePieceOfFurniture.SortableProperty.WIDTH,
         HomePieceOfFurniture.SortableProperty.DEPTH,
         HomePieceOfFurniture.SortableProperty.HEIGHT,
+        HomePieceOfFurniture.SortableProperty.VOLUME,
         HomePieceOfFurniture.SortableProperty.VISIBLE});
+
     // Init transient lists and other fields
     init(true);
     addModelListeners();
@@ -488,6 +490,7 @@ public class Home implements Serializable, Cloneable {
       case WIDTH : 
       case DEPTH :
       case HEIGHT :
+      case VOLUME :
       case MOVABLE :
       case DOOR_OR_WINDOW :
       case COLOR :
