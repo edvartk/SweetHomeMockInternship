@@ -2034,7 +2034,8 @@ public class PlanComponent extends JComponent implements PlanView, Scrollable, P
             }
             return result;
           }
-          Graphics2D graphicsTest = (Graphics2D) g.create();
+          Graphics2D graphicsTest =
+                  new BufferedImage(1, 1, BufferedImage.TYPE_INT_RGB).createGraphics();
           int status;
           try {
             status = printSelectedLevel(graphicsTest, pageFormat, levelPage);
